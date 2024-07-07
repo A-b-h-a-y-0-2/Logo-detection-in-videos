@@ -14,8 +14,8 @@ This project uses YOLOv7 to detect Pepsi and CocaCola logos in a video file and 
 1. **Clone Repository**
 
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone https://github.com/A-b-h-a-y-0-2/Logo-detection-in-videos
+   cd Logo-detection-in-videos
    ```
 
 2. **Install Dependencies**
@@ -28,30 +28,36 @@ This project uses YOLOv7 to detect Pepsi and CocaCola logos in a video file and 
   
    This will install all necessary libraries for running the pipeline.
 
-### Running the Pipeline
+3. Ensure you have the YOLOv7 model file `best.pt` in the repository directory.
 
-1. **Environment Setup**
+## Running the Pipeline
 
-   
-2. **Executing the Pipeline**
+To run the pipeline and detect logos in a video file, open the yolov7 directory and use the following command:
 
-   Navigate to the project directory and run the following command to execute the pipeline:
+```sh
+python logo_detection.py path/to/video.mp4 output.json --model_path path/to/best.pt --max_frames 1000 --frame_interval 10
+```
 
-   ```bash
-   python pipeline.py --input_file path/to/your/audio_file.wav
-   ```
+### Command-line Arguments
 
-   Replace `path/to/your/audio_file.wav` with the path to your desired audio file.
+- `video_path`: Path to the input video file.
+- `output_json`: Path to the output JSON file where results will be saved.
+- `--model_path`: Path to the YOLOv7 model file (default is `best.pt`).
+- `--max_frames`: Maximum number of frames to process (default is 1000).
+- `--frame_interval`: Process every nth frame to save computation time (default is 10).
 
-3. **Output**
+### Example
 
-   - The pipeline will process the video file and print the extracted action items to the console, one per line.
-   - Example output:
-     ```
-     Action Item 1
-     Action Item 2
-     Action Item 3
-     ```
+```sh
+python logo_detection.py videoplayback.mp4 results.json 
+```
+
+This will process the video file `videoplayback.mp4`, detect Pepsi and CocaCola logos, and save the timestamps in `results.json`.
+
+## Demo Video
+
+A [loom.com](http://loom.com) video recording of the demo, showing the pipeline processing an audio file and returning the desired list of action items, can be found [here](#).
+
 
 ### Demo Video (loom.com)
 
