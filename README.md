@@ -35,7 +35,7 @@ Prerequisites
 To run the pipeline and detect logos in a video file, open the yolov7 directory and use the following command:
 
 ```sh
-python logo_detection.py path/to/video.mp4 output.json --model_path path/to/best.pt --max_frames 1000 --frame_interval 10
+python running.py path/to/video.mp4 output.json --model_path path/to/best.pt --max_frames 1000 --frame_interval 10
 ```
 
 ### Command-line Arguments
