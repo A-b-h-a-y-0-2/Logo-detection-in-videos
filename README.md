@@ -6,7 +6,7 @@ This project uses YOLOv7 to detect Pepsi and CocaCola logos in a video file and 
 ## README.md
 
 ### Setup Instructions
-####Prerequisites
+Prerequisites
 1. Python 3.8 or later
 2. PyTorch (compatible with your CUDA version, if available)
 
