@@ -60,8 +60,3 @@ The output contains 2 items:
 ## Demo Video
 
 A [loom.com](http://loom.com) video recording of the demo, showing the pipeline processing an audio file and returning the desired list of action items, can be found [here](https://www.loom.com/share/e98a5d3ad5634de1b1f0b0632a6c0915?sid=0d9c8a05-a200-40c2-b353-f016a6142459).
-
-
-### Demo Video (loom.com)
-
-Watch the demo video on [Loom](http://loom.com) demonstrating the pipeline in action, processing an audio file and displaying the extracted action items.
