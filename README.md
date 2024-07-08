@@ -49,7 +49,7 @@ python running.py path/to/video.mp4 output.json --model_path path/to/best.pt --m
 ### Example
 
 ```sh
-python running.py videoplayback.mp4 results.json 
+python running.py videos/videoplayback.mp4 output/results.json 
 ```
 
 This will process the video file `videoplayback.mp4`, detect Pepsi and CocaCola logos, and save the timestamps in `results.json`.
